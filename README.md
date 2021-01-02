@@ -133,9 +133,6 @@ if __name__ == "__main__":
 ```
 
 Ideally, you will get a dataframe as below:
-
-
-
 ![Pic](https://github.com/wxqqaz123/Linkedin-Scraper-For-Cohort-Analysis/blob/main/img/demo.png)
 
 
