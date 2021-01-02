@@ -136,7 +136,7 @@ Ideally, you will get a dataframe as below:
 
 
 
-![Pic](https://github.com/wxqqaz123/AWS-Linkedin-Cohort-Scraper/blob/main/demo.png)
+![Pic](https://github.com/wxqqaz123/Linkedin-Scraper-For-Cohort-Analysis/blob/main/img/demo.png)
 
 
 
@@ -175,6 +175,10 @@ glueContext.write_dynamic_frame.from_options(
        format = "csv")
 ```
 
+The transformed dataset will be like:
+
+![Pic](https://github.com/wxqqaz123/Linkedin-Scraper-For-Cohort-Analysis/blob/main/img/demo2.png)
+
 ## Load to DynamoDB with Lambda
 Finally we load transformed data to DynamoDB by leveraging Lambda
 ```Python
@@ -204,3 +208,6 @@ def lambda_handler(event, context):
          for item in items:
              batch.put_item(Item=item)
 ```
+The Items uploaded to DynamoDB will be like:
+
+![Pic](https://github.com/wxqqaz123/Linkedin-Scraper-For-Cohort-Analysis/blob/main/img/demo3.png)
